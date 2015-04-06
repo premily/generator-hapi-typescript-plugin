@@ -34,26 +34,24 @@ module.exports = yeoman.generators.Base.extend({
         this.mkdir('test');
     },
 
-    writing: {
 
-        templates: function () {
-            var context = {
-                site_name: this.appName
-            };
-            this.template('src/_main.ts', 'src/main.ts', context);
-            this.template('src/_plugin.ts', 'src/plugin.ts', context);
-        },
-
-        files: function () {
-            this.copy('gulpfile.js', 'gulpfile.js');
-            this.copy('gitignore', '.gitignore');
-            this.copy('index.js', 'index.js');
-            this.copy('README.md', 'README.md');
-            this.copy('Makefile', 'Makefile');
-            this.copy('test/test.js', 'test/test.js');
-        }
-
+    template: function () {
+        var context = {
+            pluginName: this.pluginName
+        };
+        this.template('src/_main.ts', 'src/main.ts', context);
+        this.template('src/_plugin.ts', 'src/plugin.ts', context);
     },
+
+    copyfiles: function () {
+        this.copy('gulpfile.js', 'gulpfile.js');
+        this.copy('gitignore', '.gitignore');
+        this.copy('index.js', 'index.js');
+        this.copy('README.md', 'README.md');
+        this.copy('Makefile', 'Makefile');
+        this.copy('test/test.js', 'test/test.js');
+    },
+
 
     install: function () {
         this.installDependencies();

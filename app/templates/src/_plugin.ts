@@ -4,10 +4,10 @@ export interface IRegister {
 }
 
 export default
-class Plugin {
+class <%= pluginName %> {
     constructor() {
         this.register.attributes = {
-            name: 'plugin',
+            name: '<%= pluginName %>',
             version: '0.1.0'
         };
     }
