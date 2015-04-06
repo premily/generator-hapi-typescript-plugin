@@ -29,13 +29,9 @@ module.exports = yeoman.generators.Base.extend({
 
     },
 
-    scaffoldFolders: function () {
-        this.mkdir('src');
-        this.mkdir('test');
-    },
 
 
-    template: function () {
+    templatefiles: function () {
         var context = {
             pluginName: this.pluginName
         };
