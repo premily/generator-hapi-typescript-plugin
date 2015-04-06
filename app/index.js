@@ -2,6 +2,7 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var path = require('path');
 
 module.exports = yeoman.generators.Base.extend({
     initializing: function () {
@@ -18,11 +19,21 @@ module.exports = yeoman.generators.Base.extend({
 
         var prompts = [{
             name: 'pluginName',
-            message: 'What would be the best name for your Plugin? mh? Choose wisely!'
+            message: 'What would be the best name for your Plugin? mh? Choose wisely!',
+            default: process.cwd().split(path.sep).pop()
+        }, {
+            name: 'className',
+            message: 'What is the name of the plugins class?'
+        }, {
+            name: 'descriptionField',
+            message: 'Do you have a quick description for me?',
+            default: 'Superpower'
         }];
 
         this.prompt(prompts, function (props) {
             this.pluginName = props.pluginName;
+            this.className = props.className;
+            this.descriptionField = props.descriptionField;
 
             done();
         }.bind(this));
@@ -33,7 +44,9 @@ module.exports = yeoman.generators.Base.extend({
 
     templatefiles: function () {
         var context = {
-            pluginName: this.pluginName
+            pluginName: this.pluginName,
+            className: this.className,
+            descriptionField: this.descriptionField
         };
         this.template('src/_main.ts', 'src/main.ts', context);
         this.template('src/_plugin.ts', 'src/plugin.ts', context);
