@@ -1,33 +1,12 @@
 {
   "name": "<%= pluginName %>",
   "version": "0.1.0",
-  "description": "boilerplate-code for a hapi-plugin using typescript and gulp",
+  "description": "<%= descriptionField %>",
   "main": "index.js",
   "scripts": {
     "test": "make test-cov",
     "postinstall": "gulp ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/premily/hapi-typescript-plugin.git"
-  },
-  "keywords": [
-    "hapijs",
-    "boilerplate",
-    "typescript",
-    "gulp"
-  ],
-  "contributors": [
-    {
-      "name": "Timo Weiß",
-      "email": "info@timo-weiss.com"
-    }
-  ],
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/premily/hapi-typescript-plugin/issues"
-  },
-  "homepage": "https://github.com/premily/hapi-typescript-plugin",
   "peerDependencies": {
     "hapi": ">=8.x.x"
   },
