@@ -37,6 +37,7 @@ module.exports = yeoman.generators.Base.extend({
         };
         this.template('src/_main.ts', 'src/main.ts', context);
         this.template('src/_plugin.ts', 'src/plugin.ts', context);
+        this.template('_package.json', 'package.json', context);
     },
 
     copyfiles: function () {

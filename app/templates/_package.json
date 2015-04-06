@@ -1,5 +1,5 @@
 {
-  "name": "hapi-typescript-plugin",
+  "name": "<%= pluginName %>",
   "version": "0.1.0",
   "description": "boilerplate-code for a hapi-plugin using typescript and gulp",
   "main": "index.js",
