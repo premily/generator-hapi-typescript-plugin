@@ -1,2 +1,2 @@
-import <%= pluginName %> from './plugin';
-export = <%= pluginName %>;
+import <%= className %> from './plugin';
+export = <%= className %>;
