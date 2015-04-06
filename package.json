@@ -1,6 +1,6 @@
 {
   "name": "generator-hapi-typescript-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generate a Hapi Plugin in Typescript",
   "license": "MIT",
   "main": "app/index.js",
