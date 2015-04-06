@@ -1,5 +1,4 @@
-# generator-hapi-typescript-plugin-generator [![Build Status](https://secure.travis-ci.org/michaelknoch/generator-hapi-typescript-plugin-generator.png?branch=master)](https://travis-ci.org/michaelknoch/generator-hapi-typescript-plugin-generator)
-
+# generator-hapi-typescript-plugin
 > [Yeoman](http://yeoman.io) generator
 
 
@@ -9,7 +8,7 @@
 
 Trick question. It's not a thing. It's this guy:
 
-![](http://i.imgur.com/JHaAlBJ.png)
+![](https://raw.githubusercontent.com/yeoman/yeoman.io/master/media/optimized/yeoman-masthead.png)
 
 Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
 
@@ -23,10 +22,10 @@ npm install -g yo
 
 Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
 
-To install generator-hapi-typescript-plugin-generator from npm, run:
+To install generator-hapi-typescript-plugin from npm, run:
 
 ```bash
-npm install -g generator-hapi-typescript-plugin-generator
+npm install -g generator-hapi-typescript-plugin
 ```
 
 Finally, initiate the generator:
