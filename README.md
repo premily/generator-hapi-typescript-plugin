@@ -31,6 +31,6 @@ npm install -g generator-hapi-typescript-plugin
 Finally, initiate the generator:
 
 ```bash
-yo hapi typescript plugin generator
+yo hapi-typescript-plugin
 ```
 
