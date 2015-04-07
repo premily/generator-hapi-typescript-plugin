@@ -22,4 +22,10 @@ class <%= className %> {
         // Register
         return 'register';
     }
+
+    errorInit(err) {
+        if (err) {
+            console.log('Failed to load plugin:', err);
+        }
+    }
 }
