@@ -23,9 +23,9 @@ class <%= className %> {
         return 'register';
     }
 
-    errorInit(err) {
-        if (err) {
-            console.log('Failed to load plugin:', err);
+    errorInit(error) {
+        if (error) {
+            console.log('Error: Failed to load plugin:', error);
         }
     }
 }
