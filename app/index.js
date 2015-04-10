@@ -60,6 +60,7 @@ module.exports = yeoman.generators.Base.extend({
         this.copy('README.md', 'README.md');
         this.copy('Makefile', 'Makefile');
         this.copy('test/test.js', 'test/test.js');
+        this.copy('tsd.json', 'tsd.json');
     },
 
 
