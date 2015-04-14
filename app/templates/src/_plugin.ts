@@ -25,7 +25,7 @@ class <%= className %> {
 
     errorInit(error) {
         if (error) {
-            console.log('Error: Failed to load plugin:', error);
+            console.log('Error: Failed to load plugin (<%= className %>):', error);
         }
     }
 }
